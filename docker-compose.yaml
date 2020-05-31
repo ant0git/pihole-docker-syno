@@ -21,9 +21,6 @@ services:
     dns:
       - 9.9.9.9
       - 1.1.1.1
-    environment:
-        DNS1: 176.103.130.130
-        DNS2: no
     ports:
       - 443/tcp
       - 53/tcp
