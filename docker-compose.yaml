@@ -17,9 +17,13 @@ services:
     volumes:
       - './etc-pihole/:/etc/pihole/'
       - './etc-dnsmasq.d/:/etc/dnsmasq.d/'
+      - './resolv.conf:/etc/resolv.conf'
     dns:
       - 9.9.9.9
       - 1.1.1.1
+    environment:
+        DNS1: 176.103.130.130
+        DNS2: no
     ports:
       - 443/tcp
       - 53/tcp
